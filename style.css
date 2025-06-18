@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #001f3f;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 20px;
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#moduleContent {
+  margin-top: 20px;
+  background-color: #003366;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.rank-badge {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: gold;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
