@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SiriusImpact</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="rank-badge" id="rankBadge">Recruit</div>
+  <h1>SiriusImpact</h1>
+
+  <div class="grid">
+    <button onclick="openModule('corporate')">Corporate Hero</button>
+    <button onclick="openModule('cq')">Cultural Intelligence</button>
+    <button onclick="openModule('nonverbal')">Non-Verbal Communication</button>
+    <button onclick="openModule('influence')">Influence</button>
+    <button onclick="openModule('cmi')">CMI</button>
+    <button onclick="openModule('coaching')">Coaching</button>
+    <button onclick="openModule('resilience')">Resilience</button>
+    <button onclick="openModule('support')">Supportiveness</button>
+    <button onclick="openModule('compliance')">Compliance</button>
+  </div>
+
+  <div id="moduleContent"></div>
+
+  <label><input type="checkbox" id="voiceToggle" /> Enable HeroBot Voice</label>
+
+  <script src="script.js"></script>
+</body>
+</html>
