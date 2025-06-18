@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SiriusImpact</title>
+  <title>SiriusImpact Visual App</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="rank-badge" id="rankBadge">Recruit</div>
-  <h1>SiriusImpact</h1>
+  <header>
+    <h1>SIRIUS SOLUTIONS APP</h1>
+  </header>
 
-  <div class="grid">
-    <button onclick="openModule('corporate')">Corporate Hero</button>
-    <button onclick="openModule('cq')">Cultural Intelligence</button>
-    <button onclick="openModule('nonverbal')">Non-Verbal Communication</button>
-    <button onclick="openModule('influence')">Influence</button>
-    <button onclick="openModule('cmi')">CMI</button>
-    <button onclick="openModule('coaching')">Coaching</button>
-    <button onclick="openModule('resilience')">Resilience</button>
-    <button onclick="openModule('support')">Supportiveness</button>
-    <button onclick="openModule('compliance')">Compliance</button>
-  </div>
+  <main id="main-screen">
+    <div class="grid">
+      <div class="tile" onclick="openModule('Corporate Hero')">The Corporate Hero</div>
+      <div class="tile" onclick="openModule('Cultural Intelligence')">Cultural Intelligence</div>
+      <div class="tile" onclick="openModule('Non-Verbal Communication')">Non-Verbal Communication</div>
+      <div class="tile" onclick="openModule('Influence')">Influence</div>
+      <div class="tile" onclick="openModule('CMI')">CMI</div>
+      <div class="tile" onclick="openModule('Coaching')">Coaching</div>
+      <div class="tile" onclick="openModule('Resilience')">Resilience</div>
+      <div class="tile" onclick="openModule('Supportiveness')">Supportiveness</div>
+      <div class="tile" onclick="openModule('Compliance')">Compliance</div>
+    </div>
+    <div class="footer">
+      <p>• AI Integration • Offline Access • Gamification • Analytics</p>
+    </div>
+  </main>
 
-  <div id="moduleContent"></div>
-
-  <label><input type="checkbox" id="voiceToggle" /> Enable HeroBot Voice</label>
+  <section id="content-screen" style="display:none;">
+    <button onclick="goBack()">← Back</button>
+    <h2 id="module-title"></h2>
+    <div id="module-content"></div>
+  </section>
 
   <script src="script.js"></script>
 </body>
